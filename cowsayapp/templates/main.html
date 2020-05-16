@@ -1,0 +1,9 @@
+<h1> What do you want the cow to say </h1>
+<form action="", method="POST"> 
+    {% csrf_token %}
+    {{form.as_p}}
+    <button><a href="/history/" style="text-decoration:none;color:black">History</a></button>  |
+    <input type="submit" value="Post">
+</form>
+<pre>{{display}}</pre> 
+{% comment %} pre tag helps what's being displayed hold its shape {% endcomment %}
